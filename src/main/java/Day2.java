@@ -4,9 +4,21 @@ public class Day2 {
     public static void main( String[] args ) {
 
          //Bai 1: Write a Java program to calculate summary of all digits of number with 3 digits
-        int sum =0;
-        sum =(999+100)*900/2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input number:");
+        int num = sc.nextInt();
+        int digit;
+        int sum = 0;
+        int count = 0;
+        while (num > 0) {
+            digit = num % 10;
+            num = num / 10;
+            sum += digit;
+            count += 1;
+
+        }
         System.out.println(sum);
+        System.out.println(count);
 
         //Bai 2: Write a Java program to convert temperature from Fahrenheit to Celsius degree and vice-versa (Celsius/5 = (Fahrenheit -32) / 9
         double doC=0;
