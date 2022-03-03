@@ -1,6 +1,8 @@
+package org.example.day2;
+
 import java.util.Scanner;
 
-public class Day2 {
+public class Exercise2 {
     public static void main( String[] args ) {
 
          //Bai 1: Write a Java program to calculate summary of all digits of number with 3 digits

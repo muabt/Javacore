@@ -1,7 +1,4 @@
-package org.example;
-
-import java.util.Collections;
-import java.util.Date;
+package org.example.day2;
 
 /**
  * Hello world!
