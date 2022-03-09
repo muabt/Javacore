@@ -9,7 +9,8 @@ public class Exercise4 {
            // displayRightTriangle();
            // displayRightTriangle2();
            // reverseNumber();
-            PascalTriangle();
+           // PascalTriangle();
+            MatchingString();
 
               }
         //Bai 4: Write a Java program to find the number of days in each month of a given year.
@@ -123,6 +124,24 @@ public class Exercise4 {
                 }
             }
             //Bai 18: Write Java program to check if string with parenthesis/brackets is matching or not
+                private static void MatchingString(){
+                    {
+                        String input;
+                        boolean isBalanced = false;
+                        System.out.print("Moi ban nhap ki tu can kiem tra ");
+                        Scanner in = new Scanner(System.in);
+                        input = in.nextLine();
+                        while (input.contains("()") || input.contains("[]") || input.contains("{}")) {
+                            input = input.replaceAll("\\(\\)", "")
+                                    .replaceAll("\\[\\]", "")
+                                    .replaceAll("\\{\\}", "");
+                        }
+                        if (input.length() == 0)
+                            System.out.println("Balanced ");
+                        else
+                            System.out.println("Not Balanced ");
+                    }
+                }
 
 
 

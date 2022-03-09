@@ -120,7 +120,7 @@ public class Exercise3 {
             System.out.println("Mang goc:" + Arrays.toString(myArray));
             Arrays.sort(myArray);
             int index = myArray.length-1;
-            while (myArray[index] ==myArray[myArray.length-1]){
+            while (myArray[index] ==(myArray[myArray.length-1])){
                 index --;
 
             }
