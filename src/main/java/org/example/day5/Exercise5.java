@@ -41,7 +41,7 @@ public class Exercise5 {
             //Space format specifier
             System.out.printf("===== Space format specifier =====\n");
             System.out.printf("-%d\n", 111);
-            System.out.printf("%1d | \n", 12);
+            System.out.printf("%2d | \n", 12);
             System.out.printf("%d\n", 111);
             System.out.printf("-%d\n", 222);
             System.out.printf("%d\n", 222);
@@ -61,12 +61,12 @@ public class Exercise5 {
 
             //===== Left Justification(-) Specifier =====
             System.out.printf("===== Left Justification(-) Specifier =====\n");
-            System.out.printf("|%7.4f|\n", 1234.1234);
-            System.out.printf("|%-7.4f|\n", 1234.1234);
+            System.out.printf("|%20.4f|\n", 1234.1234);
+            System.out.printf("|%-20.4f|\n", 1234.1234);
 
             //===== Precision Formats =====
             System.out.printf("===== Precision Formats =====\n");
-
+            System.out.printf("%e", 123.0000);
             System.out.printf("%.4f\n", 123.1235);
             System.out.printf("%.1f\n", 123.1);
             System.out.printf("%15s\n", "123456789012345");
